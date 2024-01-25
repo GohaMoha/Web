@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Погода и Карты</title>
+</head>
+<body>
+    
+    <div class="weather-container">
+        <h1>Прогноз погоды</h1>
+        <div class="input-container">
+            <label for="city">Город:</label>
+            <input type="text" id="city" placeholder="Введите город">
+            <button onclick="getWeather()">Получить погоду</button>
+        </div>  
+        
+        <div id="weather-info"></div>
+        
+    </div>
+    <div class="map-location">
+
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3ekYfR2-0CeAo4jDIt44a_pFjYISofDY&libraries=places"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
